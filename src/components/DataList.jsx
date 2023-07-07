@@ -39,9 +39,9 @@ function DataList() {
                                             <tr key={user.id}>
                                                 <td>{index + 1}</td>
                                                 <td>{user.userInfo?.name}</td>
-                                                <td>${user.userInfo?.email}</td>
+                                                <td>{user.userInfo?.email}</td>
                                                 <td>{user.userInfo?.age}</td>
-                                                <td><FaTrash className='text-secondaryColor' onClick={() => {
+                                                <td><FaTrash className='text-secondaryColor cursor-pointer' onClick={() => {
                                                     removeUser(user.id)}} />
                                                 </td>
                                             </tr>
