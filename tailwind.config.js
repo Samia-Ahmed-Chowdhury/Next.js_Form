@@ -6,13 +6,18 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    extend:
+    {
+      colors: {
+       primaryColor:'#1C1A4E',
+       secondaryColor:'#FF4C29'
       },
-    },
+
+      backgroundImage: {
+        bgColor: 'linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%)',
+      }
+    }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
+
